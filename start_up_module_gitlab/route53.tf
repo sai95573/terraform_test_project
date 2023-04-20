@@ -7,5 +7,5 @@ resource "aws_route53_record" "gitlab" {
   name    = var.gitlab_sub_domain_name
   type    = "A"
   ttl     = 300
-  records = [aws_instance.gitlab_server[0].public_ip]
+  records = aws_instance.gitlab_server.*.public_ip
 }

@@ -7,5 +7,5 @@ resource "aws_route53_record" "artifactory" {
   name    = var.artifactory_sub_domain_name
   type    = "A"
   ttl     = 300
-  records = [aws_instance.artifactory_server[0].public_ip]
+  records = aws_instance.artifactory_server.*.public_ip
 }

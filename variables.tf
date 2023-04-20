@@ -47,3 +47,44 @@ variable "my_key_name" {
     type = string 
 }
 
+variable "my_web_want" {
+    type = bool
+}
+
+variable "my_web_count" {
+    type = number
+
+}
+
+variable "my_mail_want" {
+    type = bool
+}
+
+variable "my_mail_count" {
+    type = number
+}
+
+variable "my_gitlab_want" {
+    type = bool
+}
+
+variable "my_gitlab_count" {
+    type = number
+}
+
+variable "my_db_want" {
+    type = bool
+}
+
+variable "my_db_count" {
+    type = number
+}
+
+variable "my_artifactory_want" {
+    type = bool
+}
+
+variable "my_artifactory_count" {
+    type = number
+}
+
